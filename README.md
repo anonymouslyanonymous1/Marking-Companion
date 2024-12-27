@@ -1,4 +1,4 @@
-# [Marking Companion](https://https://marking-companion.onrender.com)
+# [Marking Companion](https://marking-companion.onrender.com)
 It is your friendly neighbourhood AI Companion handcrafted for Edexcel 4EB1, English Language B IGCSE Paper.
 ![Marking Companion](https://marking-companion.onrender.com/static/bg.png)
 
