@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url('coolvetica.otf') format('opentype');
+}
+@font-face {
+    font-family: Lemon Milk;
+    src: url('lemon_milk.otf') format('opentype');
+}  
+
+*{
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+.now{
+    background-color: white;
+    border-radius: 40px;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    transition: box-shadow 200ms ease-in-out;
+}
+.now:hover{
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.29);
+}
+a{
+    margin-top: 2%;
+    align-self: flex-start;
+}
+@media only screen and (min-width: 700px){
+    .entry{
+        background-image: linear-gradient(to left, #640B0B, #AA4444);
+        padding: 20vh;
+    }
+}
+.entry{
+    background-image: linear-gradient(to left, #640B0B, #AA4444);
+    padding: 5%;
+}
+input{
+    font-family: Coolvetica;
+    font-size: 15pt;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #ffffff;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #640B0B;;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #ffffff;
+}
+label{
+    position: relative; 
+    bottom: 6px;
+    left: 4px;
+    font-family: Lemon Milk;
+    color: white;
+    font-size: 10pt;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+form div{
+    width: 100%;
+}
+#answer{
+    height: 400px;
+    width: 90%;
+    padding: 5%;
+    border: 2px rgb(99, 12, 22);
+    border-radius: 30px;
+    font-family: Coolvetica;
+    font-size: 10pt;
+    resize: none;
+}
+#smol{
+    height: 30px;
+    width: 90%;
+    padding: 5%;
+    border: 2px rgb(99, 12, 22);
+    border-radius: 30px;
+    font-family: Coolvetica;
+    font-size: 10pt;
+    overflow: hidden;
+    resize: none;
+}
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 40px;
+    border: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    font-family: Lemon Milk;
+}
+.additional div{
+    transition: box-shadow 200ms ease-in-out;
+}
+.additional div:hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.142);
+}
+.github{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 4%;
+    left: 88%;
+}
+@media only screen and (min-width: 700px){
+    .github{
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        top: 4%;
+        left: 94%;
+    }
+}
+.header{
+    font-family: Lemon Milk;
+    font-size: 40pt;
+    color: #ffffff;
+}
+.Sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.line{
+    border-left: 10px solid white;
+    padding: 1.5%;
+}
+.exam{
+    display: flex;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}

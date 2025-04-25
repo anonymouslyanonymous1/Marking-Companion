@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/static/icon.png">
+        <title>Evaluation</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJSF8P72NM"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-YJSF8P72NM');
+        </script>
+        <style>
+            @font-face {
+                font-family: Coolvetica;
+                src: url('/static/coolvetica.otf') format('opentype');
+            }
+            @font-face {
+                font-family: Lemon Milk;
+                src: url('/static/lemon_milk.otf') format('opentype');
+            }  
+
+            * {
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+                font-family: Coolvetica;
+            }
+
+            h1, h3{
+            text-transform: uppercase;
+            font-weight: normal;
+            }
+
+            .tabs{
+                width: 100%;
+                display: block;
+                margin:  auto;
+                position: relative;
+            }
+
+            .tabs .tab{
+                float: left;
+                display: block;
+            }
+
+            .tabs .tab>input[type="radio"] {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .tabs .tab>label {
+                left: 50%;
+                right: 50%;
+                display: block;
+                box-sizing: border-box;
+                padding: 20px 40px;
+                font-size: 16pt;
+                text-transform: uppercase;
+                cursor: pointer;
+                position: relative;
+                color: #FFF;
+                background: #640B0B;
+            }
+            @media only screen and (max-width: 700px){
+                .tabs .tab>label {
+                    left: 50%;
+                    right: 50%;
+                    display: block;
+                    box-sizing: border-box;
+                    padding: 10px 10px;
+                    font-size: 14pt;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    position: relative;
+                    color: #FFF;
+                    background: #640B0B;
+                }
+                .tabs .content {
+                z-index: 0;/* or display: none; */
+                width: 100%;
+                height: 100rem;
+                padding: 25px;
+                position: absolute;
+                box-sizing: border-box;
+                margin-top: 50px;
+                background-image: linear-gradient(to right, #640B0B, #7C0B2B);
+                color: #DFDFDF;
+                opacity:0;
+                transition: opacity 200ms ease-out;
+                }
+                
+            }
+            .tabs .content {
+                z-index: 0;/* or display: none; */
+                width: 100%;
+                height: 100rem;
+                padding: 25px;
+                position: absolute;
+                box-sizing: border-box;
+                top: 65px;
+                left: 0;
+                background-image: linear-gradient(to right, #640B0B, #7C0B2B);
+                color: #DFDFDF;
+                opacity:0;
+                transition: opacity 200ms ease-out;
+            }
+
+            .tabs>.tab>[id^="tab"]:checked + label {
+                top: 0;
+                background-image: linear-gradient(#7a1616, #640B0B);
+                color: #F5F5F5;
+            }
+
+            .tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+                z-index: 1;
+                opacity: 1;
+                transition: opacity 400ms ease-out;
+            }
+
+            @property --fill{
+                syntax: '<percentage>';
+                inherits: true;
+                initial-value: 0%;
+            }
+            @keyframes overall{
+                from{--fill: 0%}
+                to{--fill: {{total}}%}
+            }
+            @keyframes q3{
+                from{--fill: 0%}
+                to{--fill: {{q3}}%}
+            }
+            @keyframes q6{
+                from{--fill: 0%}
+                to{--fill: {{q6}}%}
+            }
+            @keyframes q7{
+                from{--fill: 0%}
+                to{--fill: {{q7}}%}
+            }
+            @keyframes q8{
+                from{--fill: 0%}
+                to{--fill: {{q8_total}}%}
+            }
+            @keyframes last{
+                from{--fill: 0%}
+                to{--fill: {{essay_total}}%}
+            }
+            .pie_overall{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: conic-gradient(#ff9a03 var(--fill), #721212 var(--fill));
+                animation-name: overall;
+                animation-delay: 0.6s;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                left: 45%;
+            }
+            .pie_q3{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: conic-gradient(#ff9a03 var(--fill), #721212 var(--fill));
+                animation-name: q3;
+                animation-delay: 0.6s;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .pie_q6{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: conic-gradient(#ff9a03 var(--fill), #721212 var(--fill));
+                animation-name: q6;
+                animation-delay: 0.6s;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .pie_q7{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: conic-gradient(#ff9a03 var(--fill), #721212 var(--fill));
+                animation-name: q7;
+                animation-delay: 0.6s;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .pie_q8{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: conic-gradient(#ff9a03 var(--fill), #721212 var(--fill));
+                animation-name: q8;
+                animation-delay: 0.6s;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .pie_last{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: conic-gradient(#ff9a03 var(--fill), #721212 var(--fill));
+                animation-name: last;
+                animation-delay: 0.6s;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #pie{
+                margin-top: 10px;
+                transition: box-shadow 200ms ease-in-out;
+            }
+            #pie:hover{
+                box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.142);
+            }
+            .smaller{
+                z-index: 2;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: #640B0B;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+            .containero{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .improvement{
+                border-left: 10px solid white;
+                padding: 1.5%;
+            }
+            .impr{
+                background-color: #a12929;
+                border-radius: 30px;
+                width: 100%;
+                height: fit-content;
+                transition: box-shadow 200ms ease-in-out;
+                font-size: 15pt;
+                padding: 1.5%;
+            }
+            @media only screen and (max-width: 700px){
+                .impr{
+                background-color: #a12929;
+                border-radius: 30px;
+                width: 100%;
+                height: fit-content;
+                transition: box-shadow 200ms ease-in-out;
+                font-size: 15pt;
+                padding: 4%;
+                }
+            }
+            .impr:hover{
+                box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.142);
+            }
+        </style>
+    </head>
+    <body style="background-color: #640B0B;">
+        <ul class="tabs">
+            <li class="tab">
+                <input type="radio" name="tabs" checked="checked" id="tab1" />
+                <label for="tab1">Overall</label>
+                <div id="tab-content1" class="content">
+                    <div class="containero">
+                        <div id="pie" class="pie_overall">
+                            <div class="smaller"><h1 style="font-family: Coolvetica; font-size: 15pt;">{{total}}/100</h1></div>
+                        </div>        
+                        <p class="improvement"><span style="text-decoration: underline;">Small Questions: </span><br>
+                            
+                            - For Question 1, {{q1}} <br> <br>
+                            - For Question 2, {{q2}} <br> <br>
+                            - For Question 4, {{q4}} <br> <br>
+                            - For Question 5, {{q5}} <br>
+                            
+                        </p> 
+                        <p class="improvement"><span style="text-decoration: underline;">Language Analysis, Text 1: </span><br>
+                            {{q3_im}}
+                        </p> 
+                        <p class="improvement"><span style="text-decoration: underline;">Language Analysis, Text 2: </span><br>
+                            {{q6_im}}
+                        </p>
+                        <p class="improvement"><span style="text-decoration: underline;">Comparison: </span><br>
+                            {{q7_im}}
+                        </p>
+                        <p class="improvement"><span style="text-decoration: underline;">Question 8: </span><br>
+                            {{q8_im}}
+                        </p>
+                        <p class="improvement"><span style="text-decoration: underline;">Creative Essay: </span><br>
+                            {{essay_im}}
+                        </p>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="tab">
+              <input type="radio" name="tabs" id="tab2" />
+              <label for="tab2">Question 3</label>   
+              <div id="tab-content2" class="content">
+                    <h1>Text 1 Analysis</h1>
+                    <hr/>
+                    <div class="container">
+                        <div id="pie" class="pie_q3">
+                            <div class="smaller"><h1 style="font-family: Coolvetica; font-size: 15pt;">{{q3n}}/10</h1></div>
+                        </div>        
+                        <div class="impr">
+                            <p>Points Missed</p>
+                            <hr/>
+                            <p>{{point_3}}</p>
+                        </div>
+                        <div class="impr">
+                            <p>Why the mark?</p>
+                            <hr/>
+                            <p>{{ao2_3}}</p>                        
+                        </div>
+                    </div>
+               </div>
+            </li>
+        
+            <li class="tab">
+                <input type="radio" name="tabs" id="tab3" />
+                <label for="tab3">Question 6</label>   
+                <div id="tab-content3" class="content">
+                      <h1>Text 2 Analysis</h1>
+                      <hr/>
+                      <div class="container">
+                          <div id="pie" class="pie_q6">
+                              <div class="smaller"><h1 style="font-family: Coolvetica; font-size: 15pt;">{{q6n}}/10</h1></div>
+                          </div>        
+                          <div class="impr">
+                              <p>Points Missed</p>
+                              <hr/>
+                              <p>{{point_6}}</p>
+                          </div>
+                          <div class="impr">
+                              <p>Why the mark?</p>
+                              <hr/>
+                              <p>{{ao2_6}}</p>                        
+                          </div>
+                      </div>
+                 </div>
+            </li>
+        
+            <li class="tab">
+              <input type="radio" name="tabs" id="tab4" />
+              <label for="tab4">Question 7</label>   
+              <div id="tab-content4" class="content">
+                <h1>Compare and Contrast</h1>
+                <hr/>
+                <div class="container">
+                    <div id="pie" class="pie_q7">
+                        <div class="smaller"><h1 style="font-family: Coolvetica; font-size: 15pt;">{{q7n}}/15</h1></div>
+                    </div>        
+                    <div class="impr">
+                        <p>Points Missed</p>
+                        <hr/>
+                        <p>{{points_7}}</p>
+                    </div>
+                    <div class="impr">
+                        <p>Why the mark?</p>
+                        <hr/>
+                        <p>{{ao3}}</p>                        
+                    </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="tab">
+                <input type="radio" name="tabs" id="tab5" />
+                <label for="tab5">Section B</label>   
+                <div id="tab-content5" class="content">
+                    <h1>Using the Extracts</h1>
+                    <hr/>
+                    <div class="container">
+                        <div id="pie" class="pie_q8">
+                            <div class="smaller"><h1 style="font-family: Coolvetica; font-size: 15pt;">{{q8tn}}/30</h1></div>
+                        </div>  
+                        <div class="impr">
+                            <p>Why the AO1 mark?</p>
+                            <hr/>
+                            <p>{{q8_ao1_im}}</p>                        
+                        </div>      
+                        <div class="impr">
+                            <p>Why the AO4 mark?</p>
+                            <hr/>
+                            <p>{{q8_ao4_im}}</p>                        
+                        </div>
+                        <div class="impr">
+                            <p>Why the AO5 mark?</p>
+                            <hr/>
+                            <p>{{q8_ao5_im}}</p>                        
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="tab">
+                <input type="radio" name="tabs" id="tab6" />
+                <label for="tab6">Section C</label>   
+                <div id="tab-content6" class="content">
+                    <h1>{{title}}</h1>
+                    <hr/>
+                    <div class="container">
+                        <div id="pie" class="pie_last">
+                            <div class="smaller"><h1 style="font-family: Coolvetica; font-size: 15pt;">{{etn}}/30</h1></div>
+                        </div>        
+                        <div class="impr">
+                            <p>Why the AO4 mark?</p>
+                            <hr/>
+                            <p>{{essay_ao4_why}}</p>                        
+                        </div>
+                        <div class="impr">
+                            <p>Why the AO5 mark?</p>
+                            <hr/>
+                            <p>{{essay_ao5_why}}</p>                        
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>    
+    </body>
+</html>

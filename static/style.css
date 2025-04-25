@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url('coolvetica.otf') format('opentype');
+}
+@font-face {
+    font-family: Lemon Milk;
+    src: url('lemon_milk.otf') format('opentype');
+}  
+
+*{
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+.hero{
+    background-image: linear-gradient(to left, #640B0B, #AA4444);
+    padding: 25vh;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-family: Lemon Milk;
+}
+.hero h1{
+    font-size: 100pt;
+    line-height: 90%;
+    text-align: left;
+}
+.holder{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.additional div{
+    transition: box-shadow 200ms ease-in-out;
+}
+.additional div:hover{
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.457);
+}
+.github{
+    width: 36px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 4%;
+    left: 95%;
+}
+.discord{
+    width: 36px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 4%;
+    left: 92%;
+}
+.link{
+    margin-top: 6%;
+}
+.discord{
+    width: 36px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 4%;
+    left: 92%;
+}
+.partner{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(171, 80, 80);
+    position: absolute;
+    top: 12%;
+    left: 87%; 
+    opacity: 0;
+    transition: opacity 10s ease-in-out;
+}
+.additional a:hover + .partner{
+    opacity: 1;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    align-items: center;
+    gap: 10px;
+    border-left: 10px solid white;
+    font-family: Coolvetica;
+}
+input{
+    font-family: Coolvetica;
+}
+button {
+    background-color: #6B1111;
+    color: white;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 20px;
+    width: 10%;
+    font-family: Lemon Milk;
+    transition: box-shadow 200ms ease-in-out;
+}
+button:hover {
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.132);
+}
+.calendar{
+    color: #ffffff; 
+    font-size: 20pt; 
+    margin-left: 10px;
+}
+@media only screen and (max-width: 700px){
+    *{
+        margin: 0%;
+        scroll-behavior: smooth;
+    }
+    .hero{
+        padding: 10%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Lemon Milk;
+        
+    }
+    .hero h1{
+        font-size: 20pt;
+        line-height: 90%;
+        text-align: left;
+    }
+    .holder{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .additional div{
+        transition: box-shadow 200ms ease-in-out;
+    }
+    .additional div:hover{
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.457);
+    }
+    .github{
+        width: 36px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 4%;
+        left: 90%;
+    }
+    .discord{
+        width: 36px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 4%;
+        left: 80%;
+    }
+    .link{
+        margin-top: 6%;
+    }
+    .partner{
+        display: none;
+    }
+    .additional a:hover + .partner{
+        opacity: 1;
+    }
+    form{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 10px;
+        align-items: center;
+        gap: 10px;
+        border-left: 10px solid white;
+        font-family: Coolvetica;
+    }
+    input{
+        font-family: Coolvetica;
+    }
+    button {
+        background-color: #4d0707;
+        color: white;
+        padding: 10px 15px;
+        border: 0px;
+        border-radius: 20px;
+        width: 20%;
+        font-family: Lemon Milk;
+        display: flex;
+        justify-content: center;
+        font-size: 8pt;
+        transition: box-shadow 200ms ease-in-out;
+    }
+    button:hover {
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.132);
+    }
+    .calendar{
+        font-size: 10pt;
+    }
+}
