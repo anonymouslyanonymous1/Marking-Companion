@@ -40,8 +40,10 @@ Irrespective of where you are, what device you are using, you would be able to s
             │   └───[year]
             ├───results
             │   └───[choice]
-            └───wait
+            └───wait : Loading Page for the duration Gemini takes to response
 ```
+### `/wait`
+- This uses a design that I saw in a [Hyperplexed video](https://codepen.io/Hyperplexed/pen/VwqLQbo)
 ### `/api` Endpoints
 - This is mainly used in the backend
 - `/api/data` : This is used to fetch either of Question Papers, Mark Schemes or Extracts
@@ -50,8 +52,8 @@ Irrespective of where you are, what device you are using, you would be able to s
     - The routes are self-explanatory 
     - Open `route.js` files in each folder to see the prompts
 ### Routes
-- `exam/[year]` : This is a dynamic route, i.e. it is generated for every single year in the library accordingly
-- `results/[choice]` : This is where you can view the evaluations made by Gemini
+- `/exam/[year]` : This is a dynamic route, i.e. it is generated for every single year in the library accordingly
+- `/results/[choice]` : This is where you can view the evaluations made by Gemini
     - `[choice]` is for the tabs within the results page. It is dynamically fed
 ## Changelog: v2 
 - Redesigned the whole project
@@ -64,12 +66,12 @@ Irrespective of where you are, what device you are using, you would be able to s
 - Upgraded to Gemini-2.0-Flash from Gemini-1.5-Flash
 - Rewrote the prompts so that they are more verbose
 - Prior, students had to fill up the text area with a * in order to skip questions but now they can skip questions by leaving the textarea empty
-- In the `exams/[year]` route **added**:
+- In the `/exams/[year]` route **added**:
     - Timer : So that students can adapt to exam conditions
     - Ability to view (desktop) or download (mobile/tablet) the extracts/source booklets/ insert
     - OCR : So that if any student has answers written on pen and paper already they can just take pictures of it in order to get curated feedback
         - Uses [Tesseract JS](https://tesseract.projectnaptha.com/)
         - React helps render the text on client side so that student can make further edits (incase Tesseract makes mistakes, which is possible as it's not trained on all handwritings)
-- `results` route was completely overhauled
+- `/results` route was completely overhauled
     - All the information that used to be shown in v1 before is still there but just more nicely placed
     - Pie Charts at each page however were removed as they didn't add much of an element and generally slowed FCP
