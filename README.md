@@ -59,11 +59,11 @@ Irrespective of where you are, what device you are using, you would be able to s
     - Moved from raw HTML, CSS to using:
         - Tailwind CSS
         - React
-        - ShadCN's Components and Blocks
+        - ShadCN's Components and Blocks but I did make my tweaks and adjustments, eg: `answer.jsx`, `resultCard.jsx`, ...
         - These helped speed up the redesign process astronomically
 - Upgraded to Gemini-2.0-Flash from Gemini-1.5-Flash
 - Rewrote the prompts so that they are more verbose
-- Now instead of filling up the text area with a *, students can now skip questions by leaving the textarea empty
+- Prior, students had to fill up the text area with a * in order to skip questions but now they can skip questions by leaving the textarea empty
 - In the `exams/[year]` route **added**:
     - Timer : So that students can adapt to exam conditions
     - Ability to view (desktop) or download (mobile/tablet) the extracts/source booklets/ insert
