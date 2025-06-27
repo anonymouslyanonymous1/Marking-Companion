@@ -1,0 +1,74 @@
+**Text One**
+
+The GPS app that can find anyone anywhere
+adapted from an article by Tim Adams
+
+In this passage, the writer explains how useful a new GPS app is.
+
+In common with perhaps 15 million South Africans, Eunice Sewaphe does not have a street address. Her two-room house is in a village called Relela, in a fertile, hilly region of the Limpopo province, five hours’ drive north-east of Johannesburg. If you visited Relela, you might be struck by several things the village lacks – modern sanitation, decent roads, reliable electricity – before you were struck by a lack of street names or house numbers. But living essentially off-map has considerable consequences for people like Eunice. It makes it tough to get a bank account, hard to register to vote, difficult to apply for a job or even receive a letter.
+
+For the moment, though, those ongoing concerns are eclipsed by another, larger anxiety. Eunice Sewaphe is nine months pregnant – her first child is due in two days’ time – and she is not quite sure, without an address, how she will get to hospital. The nearest hospital, Van Velden, in the town of Tzaneen, is 40 minutes away by car. If there are complications, or if the baby arrives at night, she may need an ambulance. But since no ambulance could find her house without an address, this will again necessitate her getting out to the main road.
+
+I have come up to Relela with Dr Coenie Louw, who is the regional head of the charity Gateway Health and speaks with a passionate desire to make a change for these women. ‘Though frankly,’ he says, ‘if I don’t know where you are, I can’t help you.’ Google Maps will only bring help to the edge of the village. Searching for other solutions, Louw came across what3words, the innovative British technology that, among many other things, neatly solves the question of how an ambulance might find Eunice Sewaphe.
+
+Five years ago, the founders of what3words divided the entire surface of the planet into a grid of squares, each one measuring 3 metres by 3 metres. There are 57 trillion of these squares, and each one of them has been assigned a unique three-word address. My own front door in London has the three-word address ‘span.brave.tree’. The front door of Eunice’s house in Relela might be ‘irrigates.joyful.zipper’ (or, in Zulu, ‘phephani.khuluma.bubhaka’). To test the system, I have driven up here with one of Gateway Health’s drivers, Mandla Maluleke. Maluleke has keyed the three-word code into his phone app. Once we leave the main highway, the GPS immediately signals ‘unknown road’, but even so, after many twists and turns, it takes us precisely to ‘irrigates.joyful.zipper’, and Eunice’s front door.
+
+The what3words technology was the idea of Chris Sheldrick. Like all the best ideas he developed this one to cope with a specific problem that had maddened him. He had set up a business organising musicians and production for festivals and parties around the world. Despite the advent of Google Maps, the problem that damaged his business was bands turning up at the wrong site entrance. Having given up on conventional satnav they tried using GPS co-ordinates, but get one figure wrong, and the entertainment never got started.
+
+Sheldrick thought that there had to be a better way. Looking back now, he says that ‘the key thing we were trying to solve with what3words was how do we get 15 digits of latitude and longitude into a more accessible human form’. That’s when this idea of three words came up. A bit of maths proved it was possible. ‘With 40,000 recognisable dictionary words, you have 64 trillion combinations, and there are 57 trillion squares.’
+
+The program behind what3words took six months to write. Sheldrick worked on it with two friends he had grown up with. Mohan Ganesalingham, a maths researcher at Trinity College, Cambridge, and Jack Waley-Cohen, a full-time quiz obsessive and question-setter for Only Connect, an extremely difficult UK television quiz show. They ensured that places with similar-sounding combinations of words were a very long way apart. And then there was the question of language: using a team of linguists, what3words is now available in a couple of dozen languages, from Arabic to Zulu.
+
+The technology also offers a solution to the many countries that lack any kind of universal address system. Ten governments and their postal services – including Mongolia, Nigeria, Ivory Coast and Tuvalu – have signed up to the idea. The technology has already proved invaluable in disaster zones and refugee camps as well as at rock festivals. It could easily enable drone delivery. Earlier this month the lead doctor on the Isle of Mull in Scotland, Dr Brian Prendergast, unhappy that he was unable to find his patients, requested they all sign up to it.
+
+In Limpopo, as elsewhere, Gateway Health is faced with the question of how to make the technology go viral. Dr Louw believes it takes a village. His strategy is to use Relela as a pilot scheme for what3words, to show its positive impact on health, and to use that case study to try to persuade regional and national government to adopt the address system as standard. There are 139 villages like Relela in this region. But once Relela has addressed itself, then – neighbours being neighbours – he hopes the other 138 will follow. Beyond this valley, there are 4 billion people without an address. Perhaps technology can now put them on a map, three words at a time.
+
+
+**Text Two**
+
+The Seven Main Ways Technology Impacts Your Daily Life
+adapted from an article by Jack Turner
+
+In this passage, the writer explains how technology has affected our lives, especially since the 2020 coronavirus pandemic.
+
+Technology affects almost every aspect of 21st-century life, from transport efficiency and safety, to access to food and healthcare, socialisation and productivity. The power of the internet has enabled global communities to form and ideas and resources to be shared more easily. However, the overuse of some technology has been linked to a decline in mental health, increased social division and privacy concerns.
+
+We take a look at the seven most important ways that tech has impacted our lives in recent years.
+
+Improved Communication
+The mobile phone is now considered an essential device for almost everyone, vastly superseding its original use as a telephone (to actually talk to people), and becoming our pocket-sized portal to an online world.
+
+While video calling has spent the last decade slowly creeping into daily life, it’s the ongoing pandemic that has pushed it over the edge and secured its future as an everyday way to stay in touch. Thanks to lockdowns and social distancing, families and friends are meeting up and socialising via video calls more than ever before. If you hadn’t heard of Zoom last year, you will have certainly become aware of it this year.
+
+It’s not just social lives that have been transformed by video calls, either. The pandemic has also meant that more of us are working from home than ever, and in-person meetings have been replaced with video conferencing as office staff swap the boardroom for the bedroom (or wherever else they can find space to work at home).
+
+Flexible Working
+2020 will be remembered for a lot of negative reasons, but one of its most defining positives has been the widespread acceptance of working from home. With the pandemic in full swing, many had to abandon their offices and log on from their own residences.
+
+For many, working from home has been something of a revelation – no commuting, more flexible hours, a lessened environmental impact, and being able to choose where they work from. All this is made possible thanks to technological advances, yet again. That’s not to say working outside the office doesn’t have its challenges – organising employees who are spread across various locations successfully can certainly present problems.
+
+Accessible Shopping
+With the vast majority of us owning a tablet, laptop or smartphone, we’ve all got easy access to a virtual shop right in front of us, where we can buy pretty much anything we want. Shopping has found a convenient and popular home online, but that’s not to say the high street is to be ignored – after all, you can’t really beat seeing a product in the flesh before you buy it.
+
+Better Information Access
+It may seem like a distant memory, but it wasn’t so long ago that you’d have to take a trip to the library to find out more in-depth information about a subject, if it was available at all. Today, if you want to find something out, it’s no more strenuous than a couple of clicks. For many of us, we don’t even need to move from the spot – simply pull out your phone and get Googling, or even ask your smart home assistant.
+
+It’s something of a cliché, but there is literally an app for anything. App technology has made learning, dating, dining and almost anything else you can think of a lot easier for us.
+
+Smarter Health Tracking
+Another trend in technology has been the rise of fitness devices. So what can a fitness watch actually do? We’re far beyond the days when your ‘sports watch’ could merely record your lap time. We now have the ability to monitor our heartbeats and blood pressure, track and monitor exercise plans, and even monitor our sleeping patterns.
+
+Decreased Privacy
+We’re spending more of our lives online than ever before. According to one report, Americans spent six and a half hours a day online in 2019 – a statistic that is bound to have skyrocketed since lockdowns started.
+
+While access to everything online gives us an unparalleled level of convenience, it has also made us vulnerable. Every move we make online is recorded, and we leave digital footprints wherever we visit. Hackers and scammers know this and work hard to exploit it for financial gain.
+
+Virtual Social Lives
+Another earth-shattering change in our lives has been the introduction of social media. Services such as Facebook, Snapchat, TikTok, Instagram and others now give us an insight into the waking lives of others in real time.
+
+Social media can be fun, but studies have also shown that it can have a detrimental effect on our mental health. It’s so bad, in fact, that some governments are calling for social media companies to be more responsible – especially when it comes to younger users. A study in the UK found that 46% of young girls reported that social media had a negative impact on their self-esteem, so there’s clearly a lot to fix.
+
+Ultimately, social media is only as positive as the hands of the people it’s in – but it looks like it’s here to stay, whether you like it or not.
+
+There’s no denying that technology has, and will continue to have, a huge impact on our lives, in one way or another.
+

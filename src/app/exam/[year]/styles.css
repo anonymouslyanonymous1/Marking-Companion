@@ -1,0 +1,9 @@
+circle{
+    fill: transparent;
+}
+.dotty svg{
+    stroke-width: 0%;
+}
+.linkD{
+    display: none;
+}
