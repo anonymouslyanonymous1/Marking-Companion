@@ -49,7 +49,7 @@ function Answer(props){
             <div className="flex flex-col gap-2 w-full">
                 <Input disabled={input} id={props.qn} type="file" accept=".png, .jpg, .jpeg" multiple className="hidden" onChange={handleFileInput}/>
                 <div className="flex items-start gap-1">
-                    <Textarea className="bg-white resize-none text-black w-full h-[200px]" placeholder="Your Answer" value={sessionData} onChange={updateResponse}/>
+                    <Textarea className="bg-white resize-none text-black w-full h-[200px]" placeholder="Type your answer here. To skip, leave empty." value={sessionData} onChange={updateResponse}/>
                     <Label htmlFor={props.qn} className="cursor-pointer">{icon}</Label>
                 </div>
             </div>
@@ -64,7 +64,7 @@ function Answer(props){
                 <div className="flex flex-col gap-2 w-full">
                     <Input disabled={input} id={props.qn} type="file" accept=".png, .jpg, .jpeg" multiple className="hidden" onChange={handleFileInput}/>
                     <div className="flex items-start gap-1">
-                        <Textarea className="bg-white resize-none text-black w-full h-[200px]" placeholder="Your Answer" value={sessionData} onChange={updateResponse}/>
+                        <Textarea className="bg-white resize-none text-black w-full h-[200px]" placeholder="Type your answer here. To skip, leave empty." value={sessionData} onChange={updateResponse}/>
                         <Label htmlFor={props.qn} className="cursor-pointer">{icon}</Label>
                     </div>
                 </div>
