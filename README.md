@@ -31,11 +31,11 @@ Irrespective of where you are, what device you are using, you would be able to s
             ├───api
             │   ├───data
             │   └───gemini
-            │       ├───analysis
-            │       ├───comparison
-            │       ├───secB
-            │       ├───secC
-            │       └───small
+            │       ├───analysis : For Q3, Q6
+            │       ├───comparison : For Q7
+            │       ├───secB : For Q8
+            │       ├───secC : For Q9/ Q10/ Q11
+            │       └───small : For Q1, Q2, Q4, Q5
             ├───exam
             │   └───[year]
             ├───results
@@ -62,7 +62,8 @@ Irrespective of where you are, what device you are using, you would be able to s
         - ShadCN's Components and Blocks
         - These helped speed up the redesign process astronomically
 - Upgraded to Gemini-2.0-Flash from Gemini-1.5-Flash
-- Rewrote the prompts so that they are more verbose 
+- Rewrote the prompts so that they are more verbose
+- Now instead of filling up the text area with a *, students can now skip questions by leaving the textarea empty
 - In the `exams/[year]` route **added**:
     - Timer : So that students can adapt to exam conditions
     - Ability to view (desktop) or download (mobile/tablet) the extracts/source booklets/ insert
