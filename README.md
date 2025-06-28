@@ -36,11 +36,11 @@ Irrespective of where you are, what device you are using, you would be able to s
             │       ├───secB : For Q8
             │       ├───secC : For Q9/ Q10/ Q11
             │       └───small : For Q1, Q2, Q4, Q5
-            ├───exam
+            ├───exam : Where students answer
             │   └───[year]
-            ├───results
+            ├───results : Gemini's evaluation displayed here
             │   └───[choice]
-            └───wait : Loading Page for the duration Gemini takes to response
+            └───wait : Loading Page for the duration Gemini takes to respond
 ```
 ### `/wait`
 - This uses a design that I saw in a [Hyperplexed video](https://codepen.io/Hyperplexed/pen/VwqLQbo)
