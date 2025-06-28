@@ -17,7 +17,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/hand.png" />
+      <link rel="icon" href="/handNew.png" />
       <meta name="google-site-verification" content="6rOXsUdrLM9JAXDhJ9gLrWyxuWBGm4euQcqFjlVu7XI" />
       <meta property="theme-color" content="#a43f3f" />
       <meta property="og:image" content="/bg.png" />
