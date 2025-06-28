@@ -12,7 +12,7 @@ I didn't have an English teacher, at least not one to whom I could send my essay
 
 So I used to search for AI checkers. It's not like there were no AI Checkers, but **none were specific** to the Edexcel 4EB1 Paper. These papers have *specific markschemes with certain points which all need to be covered* for attaining good marks. 
 
-Thus I made Marking Companion. It has a vast library (June 2018 - October 2023, these are the ones Edexcel has made available to) of 4EB1 Papers with all the corresponding marking schemes analysed. 
+Thus I made Marking Companion. It has a vast library (June 2018 - October 2023, these are the ones Edexcel has made available for everybody) of 4EB1 Papers with all the corresponding marking schemes analysed. 
 
 Irrespective of where you are, what device you are using, you would be able to sit for any of the 4EB1 Papers and get rapid validation about your attempt at the paper. 
 
