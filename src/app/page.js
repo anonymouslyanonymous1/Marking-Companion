@@ -62,6 +62,7 @@ export default function Combobox() {
           <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>
               <Button
+                aria-label="Past Paper List"
                 variant="outline"
                 role="combobox"
                 aria-expanded={open}
