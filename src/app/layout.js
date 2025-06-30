@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         <a className="absolute right-0 bottom-0 linkD" href="http://eduvance.au/" aria-label="First shared here">
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="secondary" className="cursor-pointer rounded-[100%] w-10 h-10 fixed m-5 right-0 bottom-0 z-2">
+              <Button aria-label="First shared here" variant="secondary" className="cursor-pointer rounded-[100%] w-10 h-10 fixed m-5 right-0 bottom-0 z-2">
                   <IconLink className=" stroke-lred" />
               </Button>
             </TooltipTrigger>
