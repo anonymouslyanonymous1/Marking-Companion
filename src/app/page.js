@@ -30,7 +30,7 @@ export default function Combobox() {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
   const [alertStatus, setAlert] = React.useState(false);
-  const [loading, setLoading] = React.useState(<Button className="bg-darkred w-full sm:w-fit" type="submit">Fetch</Button>);
+  const [loading, setLoading] = React.useState(<Button aria-label="Fetch Paper" className="bg-darkred w-full sm:w-fit" type="submit">Fetch</Button>);
   useEffect(()=>{localStorage.clear();}, [])
 
   function handleSubmit(event){    
