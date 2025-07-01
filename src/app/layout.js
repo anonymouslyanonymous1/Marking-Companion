@@ -22,6 +22,8 @@ export default function RootLayout({ children }) {
       <meta property="theme-color" content="#a43f3f" />
       <meta property="og:image" content="/bg.png" />
       <meta name="twitter:card" content="summary_large_image"/>
+      <meta property="og:title" content="Marking Companion"/>
+      <meta property="twitter:title" content="Marking Companion"/>
       <meta name="twitter:image" content="/bg.png" />
       <body className="bg-gradient-to-l from-darkred to-lightred h-64 w-full">
         <a href="https://github.com/anonymouslyanonymous1/Marking-Companion" className="github-corner" aria-label="Github Repository">
