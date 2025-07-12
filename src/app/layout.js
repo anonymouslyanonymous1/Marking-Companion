@@ -8,23 +8,55 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { IconLink } from '@tabler/icons-react';
+export const viewport = {
+  themeColor: "#a43f3f",
+}
+
 export const metadata = {
   title: "Marking Companion",
-  description: "Get your WHOLE 4EB1 Paper checked right away. Why wait for validation? Get it done quick.",
+  description:
+    "Get your WHOLE 4EB1 Paper checked right away. Why wait for validation? Get it done quick.",
+  icons: {
+    icon: "/hand.png",
+    shortcut: "/hand.png",
+    apple: "/hand.png",
+  },
+  openGraph: {
+    title: "Marking Companion",
+    description:
+      "Get your WHOLE 4EB1 Paper checked right away. Why wait for validation? Get it done quick.",
+    url: "https://marking-companion.vercel.app/",
+    type: "website",
+    images: [
+      {
+        url: "https://marking-companion.vercel.app/bg.png",
+        width: 1200,
+        height: 630,
+        alt: "Marking Companion Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Marking Companion",
+    description:
+      "Get your WHOLE 4EB1 Paper checked right away. Why wait for validation? Get it done quick.",
+    images: ["https://marking-companion.vercel.app/bg.png"],
+  },
 };
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/hand.png" />
       <meta name="google-site-verification" content="6rOXsUdrLM9JAXDhJ9gLrWyxuWBGm4euQcqFjlVu7XI" />
+      {/* <link rel="icon" href="/hand.png" />
       <meta property="theme-color" content="#a43f3f" />
       <meta property="og:image" content="/bg.png" />
       <meta name="twitter:card" content="summary_large_image"/>
       <meta property="og:title" content="Marking Companion"/>
       <meta property="twitter:title" content="Marking Companion"/>
-      <meta name="twitter:image" content="/bg.png" />
+      <meta name="twitter:image" content="/bg.png" /> */}
       <body className="bg-gradient-to-l from-darkred to-lightred h-64 w-full">
         <a href="https://github.com/anonymouslyanonymous1/Marking-Companion" className="github-corner" aria-label="Github Repository">
           <svg width="80" height="80" viewBox="0 0 250 250" className="gitsvg" aria-hidden="true">
@@ -33,7 +65,7 @@ export default function RootLayout({ children }) {
               <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" className="octo-body"></path>
           </svg>
         </a>
-        <a className="absolute right-0 bottom-0 linkD" href="http://eduvance.au/" aria-label="First shared here">
+        <a className="absolute right-0 bottom-0 linkD" href="http://Marking Companion.au/" aria-label="First shared here">
           <Tooltip>
             <TooltipTrigger asChild>
               <Button aria-label="First shared here" variant="secondary" className="cursor-pointer rounded-[100%] w-10 h-10 fixed m-5 right-0 bottom-0 z-2">
