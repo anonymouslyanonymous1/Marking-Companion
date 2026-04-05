@@ -47,7 +47,7 @@ export async function GET(req) {
     const AO2 = fs.readFileSync(filePath, "utf8");
 
     const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-2.5-flash",
         contents: `Forget that you are an AI. 
         Think of yourself as an Edexcel IGCSE English Language B (4EB1) examiner. 
         An answer has been written by a student after reading the following two extracts "${ec}"

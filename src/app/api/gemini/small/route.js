@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_API_URL });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export async function GET(req) {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
@@ -32,7 +32,7 @@ export async function GET(req) {
     const markScheme = markschemes[questionIndex]
 
     const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-2.5-flash",
         contents: `Forget that you are an AI. 
         Think of yourself as an Edexcel IGCSE English Language B (4EB1) examiner. 
         An answer by a student to the question "${question}" was given as "${answer}". 

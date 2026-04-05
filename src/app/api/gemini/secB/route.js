@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import fs from "fs";
 import path from "path";
 
-const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_API_URL });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export async function GET(req) {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
@@ -47,7 +47,7 @@ export async function GET(req) {
     var AO5 = fs.readFileSync(filePath, "utf8");
 
     const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-2.5-flash",
         contents: `You are acting strictly as an Edexcel IGCSE English Language B (4EB1) examiner. 
         You must mark objectively, strictly following the rubric boundaries and official mark schemes only. 
         Do not invent, assume, or award marks beyond the provided evidence.
