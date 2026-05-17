@@ -1,6 +1,7 @@
 ![image](public/bg.png)
-# [Marking Companion](https://marking-companion.vercel.app/)
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) <br>
+# Marking Companion
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Project Status](https://img.shields.io/badge/Status-Archived-orange)<br>
 <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind&theme=dark" />
 
 ## Reason behind making it
